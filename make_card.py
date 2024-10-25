@@ -13,7 +13,7 @@ def writer_func(fullname, job, phone, email, site, address, company):
     # draw bg
     draw2 = ImageDraw.Draw(img2)
 
-
+    print('started')
 
     # image size fg
     font1 = ImageFont.truetype("regular.ttf", 85)
@@ -70,8 +70,8 @@ def writer_func(fullname, job, phone, email, site, address, company):
     ),
 
     # img.show()
-    img1.save(f'{fullname}1.png')
-    img2.save(f'{fullname}2.png')
+    img1.save(f'media/{fullname}1.png')
+    img2.save(f'media/{fullname}2.png')
     print('Successfully is cut and saved')
 
 # writer_func('Azizbek Rahimjonov', 'Manager',
